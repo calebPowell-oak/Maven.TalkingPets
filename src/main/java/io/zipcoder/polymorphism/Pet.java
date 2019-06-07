@@ -3,8 +3,6 @@ package io.zipcoder.polymorphism;
 public abstract class Pet {
     private String name;
 
-    public abstract void speak();
-
     public Pet(String name) {
         this.name = name;
     }
@@ -12,6 +10,8 @@ public abstract class Pet {
     public Pet() {
         this("no name set");
     }
+
+    public abstract String speak();
 
     public String getName() {
         return name;
