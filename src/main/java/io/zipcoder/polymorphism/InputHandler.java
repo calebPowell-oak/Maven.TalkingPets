@@ -2,27 +2,27 @@ package io.zipcoder.polymorphism;
 
 import sun.jvm.hotspot.jdi.IntegerTypeImpl;
 
+import java.lang.reflect.Array;
+import java.util.ArrayList;
 import java.util.Scanner;
 
 public class InputHandler {
     private Scanner in = new Scanner(System.in);
     private Integer numberOfPets;
-    private String[] petNames;
-    private String[] petTypes;
+    private ArrayList<String> petNames;
+    private ArrayList<String> petTypes;
 
     public InputHandler(){
         numberOfPets = 0;
-        petNames = new String[] {};
-        petTypes = new String[] {};
+        petNames = new ArrayList<String>(0);
+        petTypes = new ArrayList<String>(0);
     }
 
     public void assignNamesAndTypes(){
         setNumberOfPets(getUInt("Enter the number of pets that you have: "));
-        petNames = new String[numberOfPets];
-        petTypes = new String[numberOfPets];
         for (int i = 0; i < numberOfPets; i++) {
-            petTypes[i] = getUString(String.format("Enter type of pet no. %d: ", i + 1));
-            petNames[i] = getUString("Enter the name of that " + petTypes[i] + " :");
+            petTypes.add(getUString(String.format("Enter type of pet no. %d: ", i + 1)));
+            petNames.add(getUString("Enter the name of that " + petTypes.get(i) + " :"));
         }
     }
 
@@ -49,11 +49,11 @@ public class InputHandler {
         return numberOfPets;
     }
 
-    public String[] getPetNames() {
+    public ArrayList<String> getPetNames() {
         return petNames;
     }
 
-    public String[] getPetTypes() {
+    public ArrayList<String> getPetTypes() {
         return petTypes;
     }
 }

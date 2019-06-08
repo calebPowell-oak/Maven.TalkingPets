@@ -3,19 +3,19 @@ package io.zipcoder.polymorphism;
 import org.junit.Assert;
 import org.junit.Test;
 
-public class DogTest {
+public class ParrotTest {
 
     @Test
     public void speakTest(){
         // Given
-        Pet cat = new Dog();
+        Pet cat = new Parrot ();
 
         // When
         String actualSpeak = cat.speak();
         String actualName = cat.getName();
 
         // Assert
-        String expectedSpeak = "Woof";
+        String expectedSpeak = "Squaawk";
         Assert.assertEquals(expectedSpeak, actualSpeak);
         String expectedName = "no name set";
         Assert.assertEquals(expectedName, actualName);
@@ -24,7 +24,7 @@ public class DogTest {
     @Test
     public void defaultConstructorTest(){
         // Given
-        Pet cat = new Dog();
+        Pet cat = new Parrot ();
 
         // When
         String actualName = cat.getName();
@@ -38,7 +38,7 @@ public class DogTest {
     public void nameConstructorTest(){
         // Given
         String expected = "Jeff";
-        Pet cat = new Dog(expected);
+        Pet cat = new Parrot (expected);
 
         // When
         String actual = cat.getName();
