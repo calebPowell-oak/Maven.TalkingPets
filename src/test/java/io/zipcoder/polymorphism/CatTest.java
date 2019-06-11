@@ -12,7 +12,6 @@ public class CatTest {
 
         // When
         String actualSpeak = cat.speak();
-        String actualName = cat.getName();
 
         // Assert
         String expectedSpeak = "Miau";

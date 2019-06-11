@@ -12,7 +12,6 @@ public class ParrotTest {
 
         // When
         String actualSpeak = cat.speak();
-        String actualName = cat.getName();
 
         // Assert
         String expectedSpeak = "Squaawk";
