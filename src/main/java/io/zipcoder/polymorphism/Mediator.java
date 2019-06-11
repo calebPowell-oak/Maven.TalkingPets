@@ -13,9 +13,14 @@ public class Mediator {
         for (int i = 0; i < pets.size(); i++) {
             pets.add(petFromString(user.getPetTypes().get(i),user.getPetNames().get(i)));
         }
+        output();
     }
 
-
+    public void output(){
+        for(Pet x : pets){
+            System.out.println(x.getName() + " says: " + x.speak());
+        }
+    }
 
     public Pet petFromString(String type, String name){
         switch(type){

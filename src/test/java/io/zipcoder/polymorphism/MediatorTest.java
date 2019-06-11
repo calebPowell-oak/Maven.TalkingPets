@@ -59,4 +59,18 @@ public class MediatorTest {
         // Assert
         Assert.assertTrue(actual == null);
     }
+
+    @Test
+    public void petClassFromStringTestEmpty(){
+        // Given
+        String expectedStr = "";
+        Mediator m = new Mediator();
+
+        // When
+        Pet actual = m.petFromString(expectedStr,expectedStr);
+
+        // Assert
+        Assert.assertTrue(actual == null);
+    }
+
 }
