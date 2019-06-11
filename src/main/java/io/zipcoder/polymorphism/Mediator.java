@@ -9,8 +9,8 @@ public class Mediator {
     public void run(){
         user = new InputHandler();
         user.assignNamesAndTypes();
-        pets = new ArrayList<Pet>(user.getNumberOfPets());
-        for (int i = 0; i < pets.size(); i++) {
+        pets = new ArrayList<>(user.getNumberOfPets());
+        for (int i = 0; i < user.getNumberOfPets(); i++) {
             pets.add(petFromString(user.getPetTypes().get(i),user.getPetNames().get(i)));
         }
         output();

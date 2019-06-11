@@ -9,7 +9,6 @@ public class Parrot extends Pet {
         super(name);
     }
     public String speak() {
-        System.out.println("Squaawk");
         return "Squaawk";
     }
 }

@@ -20,4 +20,18 @@ public class InputHandlerTest {
         Assert.assertTrue(expectedSizes == n.getPetNames().size());
         Assert.assertTrue(expectedSizes == n.getPetTypes().size());
     }
+
+    @Test
+    public void setNumberOfPets(){
+        // Given
+        Integer expected = 3;
+
+        // When
+        InputHandler n = new InputHandler();
+        n.setNumberOfPets(expected);
+        Integer actual = n.getNumberOfPets();
+
+        // Assert
+        Assert.assertEquals(expected, actual);
+    }
 }

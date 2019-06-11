@@ -11,7 +11,6 @@ public class Cat extends Pet {
     }
 
     public String speak() {
-        System.out.println("Miau");
         return "Miau";
     }
 }
