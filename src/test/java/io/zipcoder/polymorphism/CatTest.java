@@ -17,8 +17,6 @@ public class CatTest {
         // Assert
         String expectedSpeak = "Miau";
         Assert.assertEquals(expectedSpeak, actualSpeak);
-        String expectedName = "no name set";
-        Assert.assertEquals(expectedName, actualName);
     }
 
     @Test

@@ -17,8 +17,6 @@ public class DogTest {
         // Assert
         String expectedSpeak = "Woof";
         Assert.assertEquals(expectedSpeak, actualSpeak);
-        String expectedName = "no name set";
-        Assert.assertEquals(expectedName, actualName);
     }
 
     @Test
