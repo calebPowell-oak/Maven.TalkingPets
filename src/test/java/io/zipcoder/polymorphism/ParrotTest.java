@@ -17,8 +17,6 @@ public class ParrotTest {
         // Assert
         String expectedSpeak = "Squaawk";
         Assert.assertEquals(expectedSpeak, actualSpeak);
-        String expectedName = "no name set";
-        Assert.assertEquals(expectedName, actualName);
     }
 
     @Test
