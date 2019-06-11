@@ -5,6 +5,7 @@ import java.util.ArrayList;
 public class Mediator {
     InputHandler user;
     ArrayList<Pet> pets;
+
     public void run(){
         user = new InputHandler();
         user.assignNamesAndTypes();
@@ -13,6 +14,8 @@ public class Mediator {
             pets.add(petFromString(user.getPetTypes().get(i),user.getPetNames().get(i)));
         }
     }
+
+
 
     public Pet petFromString(String type, String name){
         switch(type){

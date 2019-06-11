@@ -1,8 +1,5 @@
 package io.zipcoder.polymorphism;
 
-import sun.jvm.hotspot.jdi.IntegerTypeImpl;
-
-import java.lang.reflect.Array;
 import java.util.ArrayList;
 import java.util.Scanner;
 
